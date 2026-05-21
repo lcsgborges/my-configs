@@ -1,0 +1,105 @@
+{
+    "session": {
+        "trust_all_worktrees": true
+    },
+    "icon_theme": "Warm Charmed Icons",
+    "theme": "Aura Dark",
+    "theme_overrides": {
+        "Aura Dark": {
+            "border.variant": "#15141C",
+            "border": "#15141C",
+            "panel.background": "#15141C",
+            "pane.focused_border": "#4E466E",
+            "players": [
+                {
+                    "cursor": "#bd9dff",
+                },
+            ],
+            "syntax": {
+                "comment": {
+                    "font_style": "italic",
+                },
+                "comment.doc": {
+                    "font_style": "italic",
+                },
+            },
+        },
+    },
+    "soft_wrap": "bounded",
+    "preferred_line_length": 120,
+    "title_bar": {
+        "show_onboarding_banner": false,
+        "show_project_items": true,
+        "show_user_menu": false,
+    },
+    "tab_bar": {
+        "show": null,
+    },
+    "project_panel": {
+        "dock": "right",
+        "default_width": 400,
+        "hide_root": true,
+        "auto_fold_dirs": false,
+        "starts_open": false,
+        "sticky_scroll": false,
+        "scrollbar": {
+            "show": "never",
+        },
+    },
+    "outline_panel": {
+        "default_width": 300,
+        "dock": "left",
+        "indent_guides": {
+            "show": "never",
+        },
+    },
+    "file_finder": {
+        "modal_max_width": "small",
+    },
+    "scrollbar": {
+        "show": "never",
+    },
+    "gutter": {
+        "min_line_number_digits": 0,
+        "folds": true,
+        "runnables": false,
+    },
+    "indent_guides": {
+        "enabled": false,
+    },
+    "ui_font_family": "Noto Sans Duployan",
+    "ui_font_size": 22,
+    "buffer_font_size": 18,
+    "buffer_line_height": {
+        "custom": 1.8,
+    },
+    "multi_cursor_modifier": "cmd_or_ctrl",
+    "drag_and_drop_selection": {
+        "enabled": false,
+    },
+    "current_line_highlight": "none",
+    "show_whitespaces": "none",
+    "tab_size": 4,
+    "show_edit_predictions": false,
+    "show_completions_on_input": true,
+    "show_completion_documentation": true,
+    "languages": {
+        "Python": {
+            "enable_language_server": true,
+            "language_servers": ["basedpyright"],
+            "show_completions_on_input": true,
+            "show_completion_documentation": true,
+        },
+    },
+    "lsp": {
+        "clangd": {
+            "binary": {
+                "path": "/usr/bin/clangd-18",
+                "arguments": [
+                    "--query-driver=/usr/bin/gcc,/usr/bin/g++"
+                ]
+                }
+            }
+        }
+    }
+}

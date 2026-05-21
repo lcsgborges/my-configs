@@ -1,0 +1,54 @@
+{
+  "workbench.startupEditor": "none",
+  "explorer.compactFolders": false,
+  "workbench.iconTheme": "material-icon-theme",
+  "python.createEnvironment.trigger": "off",
+  "editor.fontSize": 20,
+  "code-runner.clearPreviousOutput": true,
+  "code-runner.executorMap": {
+    "javascript": "node",
+    "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "python": "clear ; python3 -u",
+    "go": "clear && go run",
+    "typescript": "ts-node", 
+  },
+  "code-runner.runInTerminal": true,
+  "code-runner.ignoreSelection": true,
+  "terminal.external.linuxExec": "xterm",
+  "workbench.editorAssociations": {
+    "*.exe": "default"
+  },
+  "editor.wordWrap": "on",
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "editor.renderWhitespace": "none",
+  "editor.tokenColorCustomizations": {
+    "comments": "#a4f7a9d2"
+  },
+  "liveServer.settings.donotVerifyTags": true,
+  "workbench.colorTheme": "GitHub Dark Dimmed",
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+"files.autoSave": "afterDelay",
+  "code-runner.saveAllFilesBeforeRun": true,
+  "accessibility.signals.lineHasWarning": {
+    "sound": "on"
+},
+"window.zoomPerWindow": false,
+"[markdown]": {
+  "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+},
+"editor.stickyScroll.enabled": false,
+"terminal.integrated.stickyScroll.enabled": false,
+"github.copilot.enable": {
+  "*": false,
+  "plaintext": false,
+  "markdown": false,
+  "scminput": false,
+  "c": false
+},
+"python.defaultInterpreterPath": "/bin/python",
+"editor.fontFamily": "Fira Code",
+"biome.suggestInstallingGlobally": false
+}
