@@ -1,4 +1,8 @@
 {
+    "active_pane_modifiers": {
+        "inactive_opacity": 1.0,
+    },
+    "cli_default_open_behavior": "new_window",
     "session": {
         "trust_all_worktrees": true,
     },
@@ -26,7 +30,7 @@
         },
     },
     "soft_wrap": "bounded",
-    "preferred_line_length": 120,
+    "preferred_line_length": 124,
     "title_bar": {
         "show_onboarding_banner": false,
         "show_project_items": true,
@@ -90,12 +94,32 @@
             "show_completions_on_input": true,
             "show_completion_documentation": true,
         },
+        "C": {
+            "enable_language_server": true,
+            "language_servers": ["clangd"],
+            "show_completions_on_input": true,
+            "show_completion_documentation": true,
+        },
+        "C++": {
+            "enable_language_server": true,
+            "language_servers": ["clangd"],
+            "show_completions_on_input": true,
+            "show_completion_documentation": true,
+        },
+        "YAML": {
+            "tab_size": 2,
+        },
     },
     "lsp": {
         "clangd": {
             "binary": {
                 "path": "/usr/bin/clangd-18",
-                "arguments": ["--query-driver=/usr/bin/gcc,/usr/bin/g++"],
+                "arguments": [
+                    "--background-index",
+                    "--completion-style=detailed",
+                    "--function-arg-placeholders",
+                    "--query-driver=/usr/bin/gcc,/usr/bin/g++,/usr/bin/clang,/usr/bin/clang++",
+                ],
             },
         },
     },
